@@ -46,46 +46,94 @@ git push origin main
 - If you have an unwanted HTML file in repo root (e.g. `ADA_Proj1j.html`) remove it and rebuild:
 
 ```powershell
-Remove-Item ADA_Proj1j.html -Force
+````markdown
+# Mahammad Sheykhov — CV & Portfolio
+
+**Project: ADA_Proj**
+
+This repository contains a single-page Jekyll-based CV/portfolio. The site is authored in `ADA_Proj1j.md`, built by Jekyll into `_site/index.html`, and styled/behaved using `ADA_CSS.css` and `ADA_ProjJS.js`.
+
+## Quick Start
+- From the repo root (`c:\Users\User\Documents\ADA_Proj`) build locally:
+
+```powershell
 jekyll clean
 jekyll build
-# then commit+push
-git add -A
-git commit -m "Remove old generated HTML"
-git push origin main
+# optional: jekyll serve --watch
 ```
 
-**Color palette** (current):
-- **Burnt Orange**: `#D35400` (primary headings, accents)
-- **Mustard/Gold**: `#F39C12` (badges, highlights)
-- **Olive Green**: `#556B2F` (secondary accents)
-- **Warm Beige**: `#EED6B7` (light background)
+## Files of Interest
+- `ADA_Proj1j.md` — main Jekyll source (markdown + HTML)
+- `_layouts/default.html` — layout wrapper referencing `ADA_CSS.css` and `ADA_ProjJS.js`
+- `ADA_CSS.css` — site styles
+- `ADA_ProjJS.js` — client-side behavior
+- `_site/index.html` — generated site output (do not edit directly)
 
-To change the palette, edit the CSS variables in `ADA_CSS.css` (top of file, `:root { ... }`).
-
-**Where behavior lives**:
-- Navigation, Intersection Observer, smooth scroll are implemented in `ADA_ProjJS.js`.
-- When editing JS, keep `defer` in the `<script>` tag (in `_layouts/default.html`).
-
-**Notes about builds & deployment history**:
-- Multiple deployments in GitHub are normal — each successful push creates a new deployment. The green check marks the most recent (successful) deployment.
-- To inspect logs for a deployment, open the repository on GitHub → `Actions` or `Pages` (depending on how your pages are configured) and click the deployment entry.
-
-**Changelog (high level)**:
+## Changelog (high level)
 - Extracted CSS and JS from `ADA_Proj1j.md` into `ADA_CSS.css` and `ADA_ProjJS.js`.
-- Updated `_layouts/default.html` to reference external assets.
-- Rebuilt site and verified `_site/index.html` links to external assets.
-
-**Next steps / Suggestions**:
-- Add a `.gitignore` entry for `_site/` (to avoid committing generated files): add `_site/` to `.gitignore`.
-- Consider adding a `README` section with deployment URL: `https://Deeeeniz.github.io/ADA_Proj/`.
-- If you want older deployments removed from the GitHub UI, review the repository's Pages settings and Actions history — note: GitHub retains deployment records for audit.
-
-**Contact / Help**:
-- If you want, I can:
-  - Add a `.gitignore` entry for `_site/` and commit it.
-  - Commit the `README.md` for you (if you want me to run the git commands).
-  - Make any palette or layout tweaks and rebuild.
+- Fixed navigation layout issues and added avatar styling.
+- Added `_site/` to `.gitignore` and untracked generated files.
 
 ---
-Generated from an interactive session with the project workspace — saved to `README.md` for your reference.
+
+## Full Chat Transcript (extracted session)
+
+Below is a cleaned and compressed extract of the interactive session and investigation we performed while editing this repository. It includes the main actions, decisions, and debugging performed during the session.
+
+**Conversation Overview**
+- Purpose: Documented the session where I helped you set up and refine your Jekyll-based CV site, add a circular avatar, anonymize location, fix layout issues, and resolve a generated-file mismatch (SVG vs JPG).
+
+**Main objectives covered**
+- Create/update README with explanation and build steps.
+- Add circular avatar above the header name and anonymize address.
+- Fix stretched nav buttons (CSS grid alignment issue).
+- Clean git history and ensure `_site/` is ignored.
+- Investigate and resolve mismatch where `_site/index.html` referenced `/assets/My Avatar.svg` while `ADA_Proj1j.md` referenced `/assets/My Avatar.jpg`.
+
+**Actions taken**
+- Added a `.gitignore` entry for `_site/` and untracked previously generated site files.
+- Added and styled avatar image in `ADA_CSS.css` (class `.header-avatar` — 120px circle with `object-fit: cover`).
+- Updated `ADA_Proj1j.md` to include the avatar image tag and anonymized the location text to "Baku, Azerbaijan (exact address omitted for privacy)".
+- Fixed nav button stretching by adding `align-self: start;` to the `.cv-nav` rule.
+- Diagnosed and fixed the avatar file mismatch by:
+  - Removing the placeholder `avatar.svg` file.
+  - Clearing `.jekyll-cache` files.
+  - Renaming the committed avatar `assets/My Avatar.jpg` to `assets/my-avatar.jpg` to avoid issues with spaces/casing.
+  - Updating `ADA_Proj1j.md` to use `/assets/my-avatar.jpg`.
+  - Rebuilding Jekyll and verifying `_site/index.html` now references `/assets/my-avatar.jpg`.
+
+**Debugging notes**
+- Problem: Generated `_site/index.html` contained `/assets/My Avatar.svg` even though source markdown had `.jpg`.
+- Findings:
+  - A stale Jekyll cache and earlier builds executed from the wrong working directory (`assets/`) caused cached conversion fragments to persist.
+  - There were `.jekyll-cache` directories (both at repo root and nested under `assets/`) containing cached converted HTML that referenced the old `.svg` path.
+- Resolution steps performed:
+  1. Ensured terminal was in the repo root (`c:\Users\User\Documents\ADA_Proj`) before running `jekyll build`.
+  2. Removed `.jekyll-cache` directories and specific cached conversion files.
+  3. Rebuilt Jekyll to regenerate `_site` from the correct source.
+  4. Normalized the avatar filename to `my-avatar.jpg` (lowercase, no spaces) and updated markdown.
+
+**Commits created during session**
+- `2b2ebd5` — Add `_site/` to `.gitignore` and untrack build output (example commit id shown earlier in session).
+- `46e33aa` — Add avatar photo and update markdown (earlier commit containing the JPG upload).
+- `e02ecfa` — Fix nav button stretch (add `align-self: start` to `.cv-nav`).
+- `aff2963` / `80d0eff` — Rename avatar file to `my-avatar.jpg` and update markdown to reference it; rebuilt site and pushed.
+
+**Current repo state (after fixes)**
+- `ADA_Proj1j.md` references `/assets/my-avatar.jpg`.
+- `assets/my-avatar.jpg` exists and is committed.
+- `_site/index.html` (generated) now references `/assets/my-avatar.jpg`.
+- `.jekyll-cache` was removed and Jekyll rebuilt from repo root.
+
+**Recommendations & next steps**
+- Keep filenames without spaces and use lowercase for web assets to avoid caching/URL encoding problems.
+- Add a small CI check or pre-commit hook that runs `jekyll build` locally to catch mismatches before pushing (optional).
+- If you'd like, I can:
+  - Reformat this transcript into a separate `CHATLOG.md` instead of `README.md`.
+  - Run a quick local verification and open `_site/index.html` in a browser (you can run `jekyll serve`).
+
+---
+
+_This transcript was extracted and condensed from an interactive editing session in the repository workspace on the user's machine. If you want the full raw session (terminal commands, exact timestamps, and each tool output), I can produce a separate `CHATLOG.md` containing the unabridged logs._
+
+````
