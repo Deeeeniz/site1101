@@ -11,6 +11,7 @@ permalink: /
     <div class="header-content">
       <h1 class="name-title">Mahammad Sheykhov</h1>
       <p class="tagline">Full-Stack Developer | Software Engineer</p>
+      <img src="/assets/avatar.svg" alt="Avatar" class="header-avatar" />
       
       <div class="header-info">
         <div class="info-item">
@@ -56,7 +57,7 @@ permalink: /
           I'm committed to building innovative solutions and sharing knowledge with the next generation.
         </p>
         <div class="location-box">
-          <strong>Location:</strong> Nadir Aliyev str., PO Box 6/75, Apartment 3, Door No. 10, AZ1075, Baku, Azerbaijan
+            <strong>Location:</strong> Baku, Azerbaijan (exact address omitted for privacy)
         </div>
       </div>
     </section>
