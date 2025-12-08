@@ -144,3 +144,14 @@ Below is a cleaned and compressed extract of the interactive session and investi
 ---
 
 (End of README)
+ 
+## Recent Layout Fixes
+
+- Commit `a9067b4`: Wrapped the right column (navigation + main content) in a `.right-col` wrapper and made `.cv-content` flexible so the about section fills the vertical gap beside the header. This avoids brittle grid hacks and lets the right column behave as a vertical flex layout.
+- Commit `f508f66`: Added `align-items: flex-start` to `.cv-nav` to prevent nav buttons from stretching vertically.
+- Commit `ec81b2c`: Added `grid-template-rows: auto auto 1fr` to `.cv-container` to let rows size naturally (nav, content, remaining space) and avoid overlap.
+- Commit `f7cce0d`: (intermediate attempt) experimented with `grid-row: 1 / -1` to make elements stretch; reverted in favor of the flex-based `.right-col` approach because it caused overlap.
+
+These changes were made to address a spacing issue where the header's height created an apparent 'forehead' gap on the right column; the fix makes the right column (nav + content) manage vertical space reliably.
+
+If you'd like, I can also add a short visual regression snapshot (PNG) saved to `dev/snapshots/` to help track future layout changes.

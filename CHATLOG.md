@@ -146,3 +146,20 @@ Note: Some outputs were captured from PowerShell and helper tools; timestamps we
 ---
 
 (End of CHATLOG)
+ 
+## Recent steps (layout fixes)
+
+- Commit `f7cce0d`: Tried `grid-row: 1 / -1` for dynamic stretching; revealed overlap issues.
+- Commit `ec81b2c`: Added `grid-template-rows: auto auto 1fr` to `.cv-container` to define rows and prevent overlap.
+- Commit `f508f66`: Added `align-items: flex-start` to `.cv-nav` to prevent nav buttons stretching vertically.
+- Commit `a9067b4`: Implemented a more robust solution by wrapping the right column in `.right-col` (flex column) and making `.cv-content` flexible so the about section fills the vertical space beside the header.
+
+Files changed in these steps:
+- `ADA_CSS.css` — grid-template-rows, nav alignment, `.right-col` styles, and `.cv-content` adjustments.
+- `ADA_Proj1j.md` — wrapped nav and main in `.right-col`.
+
+Verification:
+- Rebuilt site locally after each change and inspected `_site/index.html` to confirm generated paths and layout.
+- Pushed commits to `origin/main`. Check recent commits in the log for IDs above.
+
+(End of updated CHATLOG)
