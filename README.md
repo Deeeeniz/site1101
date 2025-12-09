@@ -154,4 +154,18 @@ Below is a cleaned and compressed extract of the interactive session and investi
 
 These changes were made to address a spacing issue where the header's height created an apparent 'forehead' gap on the right column; the fix makes the right column (nav + content) manage vertical space reliably.
 
-If you'd like, I can also add a short visual regression snapshot (PNG) saved to `dev/snapshots/` to help track future layout changes.
+## Responsive Design & Mobile Optimization
+
+- Commit `47bca50`: Added comprehensive media queries for three breakpoints:
+  - **1024px and below (tablets):** Grid collapses to single column, `.right-col` becomes flex column, nav and content stack vertically.
+  - **768px and below (mobile):** Reduced padding, smaller fonts, optimized spacing; nav buttons wrap and shrink.
+  - **480px and below (small screens):** Further reductions in padding, font sizes, and avatar size (120px → 100px → 80px).
+  - Viewport meta tag already in place ensures browsers respect breakpoints.
+
+- Commit `a67f974`: Fixed footer responsiveness:
+  - Removed hardcoded `grid-column: 2` that locked footer to right column.
+  - Added `grid-column: 1` in tablet breakpoint (1024px) so footer stacks properly when layout collapses.
+  - Updated `border-radius: 0 0 8px 8px` to `border-radius: 8px` for consistent rounded corners.
+  - Added mobile-specific footer styling with smaller padding and font sizes.
+
+Site now responds correctly on all device sizes: desktop (two-column), tablet (stacked), and mobile (single column with optimized spacing).

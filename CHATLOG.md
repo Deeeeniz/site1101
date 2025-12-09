@@ -163,3 +163,34 @@ Verification:
 - Pushed commits to `origin/main`. Check recent commits in the log for IDs above.
 
 (End of updated CHATLOG)
+
+## Responsive Design Implementation
+
+- Commit `47bca50`: Added comprehensive media queries for mobile-first responsive design.
+  - **Tablet (1024px and below):** Grid collapses to single column; `.right-col` becomes flex column with nav and content stacking vertically.
+  - **Mobile (768px and below):** Reduced padding and margins; nav buttons wrap; avatar scaled 120px → 100px; header and content font sizes decreased.
+  - **Small screens (480px and below):** Further reductions; avatar scaled to 80px; minimal padding and margins.
+  - Viewport meta tag (`<meta name="viewport" content="width=device-width, initial-scale=1.0">`) already present in `_layouts/default.html` ensures mobile browsers respect breakpoints.
+
+Files changed:
+- `ADA_CSS.css` — added three `@media` blocks with responsive rules for containers, header, nav, content, and footer at each breakpoint.
+
+Verification:
+- Rebuilt site locally and tested at different screen widths using browser DevTools.
+- Confirmed nav buttons wrap and don't stretch on mobile.
+- Confirmed content and header scale appropriately.
+
+## Footer Responsiveness Fix
+
+- Commit `a67f974`: Fixed footer layout responsiveness.
+  - Root cause: `.cv-footer` had hardcoded `grid-column: 2`, locking it to the right column at all breakpoints.
+  - Solution: Removed `grid-column: 2` from base rule; added `grid-column: 1` in tablet breakpoint (1024px) so footer collapses with the layout.
+  - Changed `border-radius: 0 0 8px 8px` to `border-radius: 8px` for consistent rounded corners.
+  - Added mobile-specific footer styling (smaller padding, font size, and margins).
+
+Verification:
+- Rebuilt and tested at mobile, tablet, and desktop widths.
+- Confirmed footer no longer stretches full-width on mobile.
+- Footer properly stacks and scales at all breakpoints.
+
+(End of session CHATLOG)
