@@ -851,9 +851,6 @@ body {
     font-size: 1.4em;
   }
 }
-  gap: 12px;
-  margin: 16px 0;
-}
 
 .social-link {
   display: flex;
@@ -1233,7 +1230,6 @@ body {
   .cv-section h2 {
     font-size: 1.4em;
   }
-} 6px;
 }
 
 .skill-badge {

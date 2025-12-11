@@ -73,9 +73,9 @@ permalink: /
     <!-- Main Content -->
     <main class="cv-content">
       <section class="cv-section active">
-        <h2>Welcome</h2>
+        <h2>Welcome!</h2>
         <div class="home-content">
-          <p>Welcome to my portfolio! I'm a passionate full-stack developer and software engineer from Baku, Azerbaijan.</p>
+          <p>Welcome to my portfolio! I'm a passionate full-stack developer and software engineer based in Baku, Azerbaijan (originally born in Nakhchivan).</p>
           
           <div class="home-highlights">
             <div class="highlight-card">
