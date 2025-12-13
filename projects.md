@@ -77,6 +77,76 @@ permalink: /projects/
         
         <div class="project-card">
           <div class="project-header">
+            <h3>ADA Y1 Project No. 1</h3>
+            <span class="project-tag">Digital Logic Gates</span>
+          </div>
+          <p class="project-description">
+            A collaborative team project where Team 30 (Suat Hamzali - Team Leader, Arif Badalov, Mahammad Sheykhov, Shakir Badalzade) designed and implemented fundamental digital logic gates (NOT, AND, OR, XOR, NAND) using digital circuit design principles and simulation tools. Teams involved: Team 33, Team 6, Team 41, Team 85.
+          </p>
+          
+          <div class="project-carousel">
+            <div class="carousel-container">
+              <div class="carousel-slide active">
+                <img src="{{ '/assets/Carousel1.PNG' | relative_url }}" alt="Digital logic gate circuit design - Project overview" />
+              </div>
+              <div class="carousel-slide">
+                <img src="{{ '/assets/Carousel2.PNG' | relative_url }}" alt="NOT and OR gate implementations" />
+              </div>
+              <div class="carousel-slide">
+                <img src="{{ '/assets/Carousel3.PNG' | relative_url }}" alt="XOR and NAND gate circuits" />
+              </div>
+              <div class="carousel-slide">
+                <img src="{{ '/assets/Carousel4.PNG' | relative_url }}" alt="Complete circuit testing and validation" />
+              </div>
+              <div class="carousel-slide">
+                <img src="{{ '/assets/Carousel6.PNG' | relative_url }}" alt="Final project results and analysis" />
+              </div>
+              <div class="carousel-slide">
+                <img src="{{ '/assets/Carousel5.PNG' | relative_url }}" alt="Advanced gate configurations" />
+              </div>
+              <button class="carousel-btn prev" onclick="changeSlide(-1)">‹</button>
+              <button class="carousel-btn next" onclick="changeSlide(1)">›</button>
+            </div>
+            <div class="carousel-dots">
+              <span class="dot active" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+          </div>
+
+          <div class="project-section">
+            <h4>Project Overview</h4>
+            <ul>
+              <li><strong>Team Size:</strong> 4 students working collaboratively</li>
+              <li><strong>Objective:</strong> Design and implement fundamental digital logic gates</li>
+              <li><strong>Gates Implemented:</strong> NOT, OR, XOR, NAND</li>
+              <li><strong>Tools Used:</strong> Digital circuit simulation software</li>
+              <li><strong>Duration:</strong> Academic semester project</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h4>Technical Implementation</h4>
+            <ul>
+              <li>Designed truth tables for each logic gate</li>
+              <li>Created circuit diagrams using Boolean algebra principles</li>
+              <li>Implemented circuits using digital simulation tools</li>
+              <li>Tested and validated gate functionality with various input combinations</li>
+              <li>Documented design process and results comprehensively</li>
+            </ul>
+          </div>
+
+          <div class="project-links">
+            <a href="https://www.youtube.com/@info_systems-team_30" 
+               class="project-link" target="_blank">View Team YouTube Channel</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
             <h3>ZenLaptops</h3>
             <span class="project-tag">E-Commerce Platform</span>
           </div>

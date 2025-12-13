@@ -143,6 +143,12 @@ Below is a cleaned and compressed extract of the interactive session and investi
 
 ---
 
+## Latest Updates
+
+**Current Status**: Portfolio enhanced with SITE 1101 Team Project 1 integration, featuring 6-image carousel, team collaboration details, and refined homepage content reflecting systems programming and AI infrastructure focus.
+
+---
+
 (End of README)
  
 ## Recent Layout Fixes
@@ -181,3 +187,22 @@ Site now responds correctly on all device sizes: desktop (two-column), tablet (s
   - **File Management**: Renamed old single-page file to `ADA_Proj1j_old.md`
 
 Site now functions as a proper multi-page portfolio with social media integration and professional navigation.
+
+## SITE 1101 Project Integration & Portfolio Enhancement
+
+- **ADA Y1 Project Addition**: Added comprehensive SITE 1101 Team Project 1 documentation:
+  - **Team 30 Details**: Suat Hamzali (Leader), Arif Badalov, Mahammad Sheykhov, Shakir Badalzade (25% each)
+  - **6-Image Carousel**: Interactive carousel with Carousel1-6.PNG images, navigation arrows, and dot indicators
+  - **Individual Video Links**: Direct links to NOT/AND/OR, NAND, and XOR gate demonstration videos
+  - **Collaborative Teams**: Listed Teams 33, 6, 41, 85 for bonus attempts
+  - **YouTube Integration**: Link to group_30 channel (https://www.youtube.com/@info_systems-team_30)
+
+- **Homepage Refinement**: Updated based on about section content:
+  - **Current Focus**: Systems programming, AI infrastructure, governance applications
+  - **Philosophy Card**: Added AI as turning point perspective
+  - **Featured Projects**: Highlighted SITE 1101 digital logic gates project
+  - **Technical Skills**: Enhanced with digital logic design and circuit simulation
+
+- **CSS & JavaScript**: Added carousel functionality with responsive design and smooth navigation
+
+Portfolio now showcases collaborative academic work with comprehensive project documentation and enhanced homepage reflecting technical focus areas.

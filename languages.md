@@ -176,25 +176,25 @@ permalink: /languages/
               <div class="level-item">
                 <span>Listening:</span>
                 <div class="level-bar">
-                  <div class="level-fill level-b2"></div>
+                  <div class="level-fill level-c1"></div>
                 </div>
               </div>
               <div class="level-item">
                 <span>Reading:</span>
                 <div class="level-bar">
-                  <div class="level-fill level-b2"></div>
+                  <div class="level-fill level-c1"></div>
                 </div>
               </div>
               <div class="level-item">
                 <span>Speaking:</span>
                 <div class="level-bar">
-                  <div class="level-fill level-b2"></div>
+                  <div class="level-fill level-c1"></div>
                 </div>
               </div>
               <div class="level-item">
                 <span>Writing:</span>
                 <div class="level-bar">
-                  <div class="level-fill level-b2"></div>
+                  <div class="level-fill level-c1"></div>
                 </div>
               </div>
             </div>

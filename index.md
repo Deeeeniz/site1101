@@ -85,17 +85,22 @@ permalink: /
           <div class="home-highlights">
             <div class="highlight-card">
               <h3>🚀 Current Focus</h3>
-              <p>Building innovative web applications and teaching robotics to the next generation</p>
+              <p>Systems programming, performance optimization, embedded software, and AI infrastructure development. Exploring AI integration in decision-making and governance systems.</p>
             </div>
             
             <div class="highlight-card">
               <h3>💻 Technical Skills</h3>
-              <p>Java, Spring Boot, JavaScript, HTML/CSS, MySQL, Python, and more</p>
+              <p>Java, Spring Boot, JavaScript, HTML/CSS, MySQL, Python, Digital Logic Design, Circuit Simulation</p>
             </div>
             
             <div class="highlight-card">
-              <h3>🎯 Featured Project</h3>
-              <p>ZenLaptops - A comprehensive e-commerce platform showcasing full-stack capabilities</p>
+              <h3>🎯 Featured Projects</h3>
+              <p>SITE 1101 Digital Logic Gates (Team 30) - Collaborative implementation of NOT, AND, OR, XOR, NAND gates</p>
+            </div>
+            
+            <div class="highlight-card">
+              <h3>🌟 Philosophy</h3>
+              <p>AI is a turning point in human history - embracing it to extract beneficial applications rather than resisting technological progress</p>
             </div>
           </div>
           
