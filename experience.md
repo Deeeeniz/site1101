@@ -129,7 +129,7 @@ permalink: /experience/
       <span>•</span>
       <a href="tel:+994504360117">Call</a>
       <span>•</span>
-      <a href="#top">Back to Top</a>
+      <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Back to Top</a>
     </div>
   </footer>
 
