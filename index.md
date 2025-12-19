@@ -89,7 +89,7 @@ permalink: /
             </div>
             
             <div class="highlight-card">
-              <h3>💻 Technical Skills</h3>
+              <h3>Technical Skills</h3>
               <p>Java, Spring Boot, JavaScript, HTML/CSS, MySQL, Python, Digital Logic Design, Circuit Simulation</p>
             </div>
             
