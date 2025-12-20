@@ -5226,3 +5226,111 @@ SITE 1101 Project Integration & Portfolio Enhancement
 LinkedIn Integration
 
 Both files now comprehensively document the portfolio's evolution from single-page to multi-page site with complete social media integration and academic project showcase.
+
+i changed the project name from ADA_Proj to site1101 and now it only shows the md content when i try to access it through github.io but when i build and serve jekyll itselve it works just fine
+
+The issue is that GitHub Pages needs to be configured to use Jekyll. Check your repository settings:
+
+Go to your GitHub repository settings
+
+Navigate to "Pages" section
+
+Under "Source", select "Deploy from a branch"
+
+Choose "main" branch and "/ (root)" folder
+
+Save the settings
+
+Also, make sure you have a _config.yml file in your repository root (which you do). The current config looks correct with baseurl: "/site1101" matching your new repository name.
+
+If GitHub Pages is still showing raw markdown, it might be because:
+
+GitHub Pages hasn't finished processing the Jekyll build (can take a few minutes)
+
+The repository might need the Jekyll theme specified in _config.yml
+
+Try adding this line to your _config.yml:
+
+Adding Jekyll plugins configuration to ensure GitHub Pages processes the site correctly.
+
+Adding Jekyll plugins configuration to ensure GitHub Pages processes the site correctly.
+
+Updating baseurl to match the new repository name site1101.
+
+The issue is your _config.yml still had the old baseurl. I've updated it to /site1101.
+
+Now commit and push this change. GitHub Pages should process the Jekyll site correctly after this update.
+
+Not Found
+'/site1101/' not found.
+WEBrick/1.9.2 (Ruby/3.4.7/2025-10-08) at 127.0.0.1:4000
+
+Removing baseurl for local development - baseurl should only be set for GitHub Pages deployment.
+
+For local development, use empty baseurl. When you're ready to deploy to GitHub Pages, change it back to /site1101.
+
+Alternatively, you can serve locally with the baseurl by running:
+
+jekyll serve --baseurl ""
+
+Copy
+
+Insert at cursor
+This way you don't need to keep changing the config file.
+
+this is what the github.io page gives me in the console ADA_CSS.css:1 Failed to load resource: the server responded with a status of 404 ()
+my-avatar.jpg:1 Failed to load resource: the server responded with a status of 404 ()
+ADA_ProjJS.js:1 Failed to load resource: the server responded with a status of 404 ()
+favicon.ico:1 Failed to load resource: the server responded with a status of 404 ()
+ADA_CSS.css:1 Failed to load resource: the server responded with a status of 404 ()
+[NEW] Explain Console errors by using Copilot in Edge: click
+
+     to explain an error. 
+    Learn more
+    Don't show again
+The issue is that GitHub Pages needs the baseurl for proper asset paths. Change the config back and check your layout file:
+
+Restoring baseurl for GitHub Pages deployment to fix asset 404 errors.
+
+The layout file is correctly using relative_url filter. Now commit and push the baseurl change to GitHub. The assets should load correctly with the proper /site1101/ prefix.
+
+it seems that whenever i type out the github.io link it gives the barebones page straight up but when i launch it using githubs visit page it works great apart from the fact that when i retry the home button specifically i get the barebones site again with the same url mind you but for some reason only html. other sources fail to load. and the navbar buttons redirect me in this barebones site to for example https://deeeeniz.github.io/about instead of https://deeeeniz.github.io/site1101/about
+
+The issue is that GitHub is serving both your repository root AND the Jekyll site. You need to configure GitHub Pages to only serve from the Jekyll site.
+
+The problem is that when you access deeeeniz.github.io directly, it's serving your user page (repository root), but when you access deeeeniz.github.io/site1101/, it serves the Jekyll site.
+
+To fix this, you have two options:
+
+Option 1: Make site1101 your main user page
+
+Rename your repository from site1101 to Deeeeniz.github.io
+
+Change baseurl back to empty: baseurl: ""
+
+Option 2: Keep current setup but always use full URLs
+The navigation links need to include the baseurl. Check if your pages are using relative_url filter correctly:
+
+The navigation links are correctly using relative_url filter. The issue is that you have another repository or page at the root level.
+
+Quick fix: Always access your site using the full URL: https://deeeeniz.github.io/site1101/
+
+Permanent solution: Rename your repository from site1101 to deeeeniz.github.io and change the baseurl to empty:
+
+Setting empty baseurl for when repository is renamed to username.github.io format.
+
+This change is ready for when you rename the repository. If you keep the current name, change it back to /site1101.
+
+i need it to be deployed in https://deeeeniz.github.io/site1101/
+
+Restoring baseurl to /site1101 for proper GitHub Pages deployment at the specified URL.
+
+Now commit and push this change. The site should work correctly at https://deeeeniz.github.io/site1101/.
+
+The issue you're experiencing is that GitHub serves different content at the root (deeeeniz.github.io) vs the subpath (deeeeniz.github.io/site1101/). Always use the full URL with /site1101/ to access your Jekyll site.
+
+clear the whole readme and write only whats needed and appropriate keep in mind that i already have a chatlog
+
+Creating a clean, concise README with only essential information since detailed logs are in CHATLOG.md.
+
+Done! The README is now clean and concise, covering only the essential information while referencing that detailed logs are available in CHATLOG.md.
