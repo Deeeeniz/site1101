@@ -10,7 +10,7 @@ permalink: /experience/
   <header class="cv-header">
     <div class="header-content">
       <h1 class="name-title">Mahammad Sheykhov</h1>
-      <p class="tagline">Full-Stack Developer | Software Engineer</p>
+      <p class="tagline">Software Engineer | Full-Stack Developer</p>
       <img src="{{ '/assets/my-avatar.jpg' | relative_url }}" alt="Mahammad Sheykhov smiling professional headshot avatar with friendly approachable demeanor" class="header-avatar" />
       
       <!-- Social Icons -->
@@ -21,14 +21,10 @@ permalink: /experience/
           </svg>
         </a>
         <a href="https://www.codecademy.com/profiles/rocketsci" target="_blank" class="social-link" title="Codecademy">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6.5 9.5h-13v-1h13v1zm0 2h-13v-1h13v1zm0 2h-13v-1h13v1zm0 2h-13v-1h13v1z"/>
-          </svg>
+          <img src="{{ '/assets/codecademy_logo_icon_167734-removebg-preview.png' | relative_url }}" alt="Codecademy" width="24" height="24" style="filter: brightness(0) invert(1); opacity: 0.8;" />
         </a>
         <a href="https://codeforces.com/profile/.rocketsci" target="_blank" class="social-link" title="Codeforces">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M4.5 7.5C5.328 7.5 6 8.172 6 9v10.5c0 .828-.672 1.5-1.5 1.5S3 20.328 3 19.5V9c0-.828.672-1.5 1.5-1.5zm7.5 0C12.828 7.5 13.5 8.172 13.5 9v10.5c0 .828-.672 1.5-1.5 1.5s-1.5-.672-1.5-1.5V9c0-.828.672-1.5 1.5-1.5zm7.5 0c.828 0 1.5.672 1.5 1.5v10.5c0 .828-.672 1.5-1.5 1.5S18 20.328 18 19.5V9c0-.828.672-1.5 1.5-1.5zM4.5 3C5.328 3 6 3.672 6 4.5S5.328 6 4.5 6 3 5.328 3 4.5 3.672 3 4.5 3zm7.5 0C12.828 3 13.5 3.672 13.5 4.5S12.828 6 12 6s-1.5-.672-1.5-1.5S11.172 3 12 3zm7.5 0c.828 0 1.5.672 1.5 1.5S20.328 6 19.5 6 18 5.328 18 4.5 18.672 3 19.5 3z"/>
-          </svg>
+          <img src="{{ '/assets/codeforces.svg' | relative_url }}" alt="Codeforces" width="24" height="24" style="filter: brightness(0) invert(1); opacity: 0.8;" />
         </a>
         <a href="https://leetcode.com/u/rocketsci/" target="_blank" class="social-link" title="LeetCode">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -45,7 +41,7 @@ permalink: /experience/
       <div class="header-info">
         <div class="info-item">
           <span class="label">Date of Birth:</span>
-          <span>17/01/2009 (16 years old)</span>
+          <span>17/01/2009</span>
         </div>
         <div class="info-item">
           <span class="label">Nationality:</span>
@@ -83,28 +79,25 @@ permalink: /experience/
         <div class="experience-card">
           <div class="experience-header">
             <h3>Instructor at Robofest</h3>
-            <span class="date-badge">Ongoing</span>
+            <span class="date-badge">25/05/2024 – 28/06/2024</span>
           </div>
-          <p class="organization">Hosted by Stemart</p>
+          <p class="organization">Hosted by Stemart and Kaspi</p>
           <p class="location">Passage 1901 (Nigar Rəfibəyli 12/14, Baku, Azerbaijan)</p>
           
           <div class="responsibilities">
             <h4>Key Responsibilities:</h4>
             <ul>
-              <li>Introduce young students to <strong>robotics, programming, and engineering principles</strong></li>
-              <li>Provide age-appropriate, engaging instruction fostering <strong>creativity and problem-solving</strong></li>
-              <li>Guide students in <strong>designing, building, and programming robots</strong> for competitions</li>
-              <li>Offer hands-on mentorship and strategic insights for competition success</li>
-              <li>Promote <strong>collaboration, critical thinking, and resilience</strong></li>
-              <li>Create supportive learning environment for <strong>experimentation and innovation</strong></li>
+              <li>Introduce young students to the basics of <strong>robotics, programming, and engineering principles</strong> in an engaging and age-appropriate manner, fostering creativity and problem-solving skills</li>
+              <li>Assist students in <strong>designing, building, and programming robots</strong> for competitions, providing hands-on mentorship, strategic insights, and troubleshooting support throughout the process</li>
+              <li>Promote <strong>collaboration, critical thinking, and resilience</strong> by fostering a supportive learning environment where students can experiment, iterate, and develop innovative solutions to competition challenges</li>
             </ul>
           </div>
         </div>
 
         <div class="experience-card">
           <div class="experience-header">
-            <h3>Book Sales Coordinator</h3>
-            <span class="date-badge">06/06/2024</span>
+            <h3>Selling Books for Charity</h3>
+            <span class="date-badge">06/06/2024 – 08/06/2024</span>
           </div>
           <p class="organization">Central Scientific Library of Azerbaijan National Academy of Science</p>
           <p class="location">Baku, Azerbaijan</p>
@@ -112,13 +105,9 @@ permalink: /experience/
           <div class="responsibilities">
             <h4>Key Responsibilities:</h4>
             <ul>
-              <li>Oversaw book sales operations for charitable fundraising</li>
-              <li>Assisted customers in book selection for optimal experience</li>
-              <li>Supervised and guided volunteer staff during the event</li>
-              <li>Delegated tasks effectively ensuring smooth workflow</li>
-              <li>Managed inventory tracking and stock level monitoring</li>
-              <li>Handled cash transactions with accuracy</li>
-              <li>Ensured transparent documentation and reporting</li>
+              <li>Oversee book sales operations, assist customers in selecting books, and ensure a positive, engaging experience to maximize sales for charitable purposes</li>
+              <li>Supervise and guide volunteers or staff, delegate tasks effectively, and maintain smooth workflow during the event to ensure efficiency</li>
+              <li>Manage book inventory, track stock levels, handle cash transactions accurately, and ensure proper documentation of sales for transparent reporting</li>
             </ul>
           </div>
         </div>

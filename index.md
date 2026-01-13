@@ -10,7 +10,7 @@ permalink: /
   <header class="cv-header">
     <div class="header-content">
       <h1 class="name-title">Mahammad Sheykhov</h1>
-      <p class="tagline">Full-Stack Developer | Software Engineer</p>
+      <p class="tagline">Software Engineer | Full-Stack Developer</p>
       <img src="{{ '/assets/my-avatar.jpg' | relative_url }}" alt="Mahammad Sheykhov smiling professional headshot avatar with friendly approachable demeanor" class="header-avatar" />
       
       <!-- Social Icons -->
@@ -21,14 +21,10 @@ permalink: /
           </svg>
         </a>
         <a href="https://www.codecademy.com/profiles/rocketsci" target="_blank" class="social-link" title="Codecademy">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6.5 9.5h-13v-1h13v1zm0 2h-13v-1h13v1zm0 2h-13v-1h13v1zm0 2h-13v-1h13v1z"/>
-          </svg>
+          <img src="{{ '/assets/codecademy_logo_icon_167734-removebg-preview.png' | relative_url }}" alt="Codecademy" width="24" height="24" style="filter: brightness(0) invert(1); opacity: 0.8;" />
         </a>
         <a href="https://codeforces.com/profile/.rocketsci" target="_blank" class="social-link" title="Codeforces">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M4.5 7.5C5.328 7.5 6 8.172 6 9v10.5c0 .828-.672 1.5-1.5 1.5S3 20.328 3 19.5V9c0-.828.672-1.5 1.5-1.5zm7.5 0C12.828 7.5 13.5 8.172 13.5 9v10.5c0 .828-.672 1.5-1.5 1.5s-1.5-.672-1.5-1.5V9c0-.828.672-1.5 1.5-1.5zm7.5 0c.828 0 1.5.672 1.5 1.5v10.5c0 .828-.672 1.5-1.5 1.5S18 20.328 18 19.5V9c0-.828.672-1.5 1.5-1.5zM4.5 3C5.328 3 6 3.672 6 4.5S5.328 6 4.5 6 3 5.328 3 4.5 3.672 3 4.5 3zm7.5 0C12.828 3 13.5 3.672 13.5 4.5S12.828 6 12 6s-1.5-.672-1.5-1.5S11.172 3 12 3zm7.5 0c.828 0 1.5.672 1.5 1.5S20.328 6 19.5 6 18 5.328 18 4.5 18.672 3 19.5 3z"/>
-          </svg>
+          <img src="{{ '/assets/codeforces.svg' | relative_url }}" alt="Codeforces" width="24" height="24" style="filter: brightness(0) invert(1); opacity: 0.8;" />
         </a>
         <a href="https://leetcode.com/u/rocketsci/" target="_blank" class="social-link" title="LeetCode">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -45,7 +41,7 @@ permalink: /
       <div class="header-info">
         <div class="info-item">
           <span class="label">Date of Birth:</span>
-          <span>17/01/2009 (16 years old)</span>
+          <span>17/01/2009</span>
         </div>
         <div class="info-item">
           <span class="label">Nationality:</span>
@@ -85,12 +81,12 @@ permalink: /
           <div class="home-highlights">
             <div class="highlight-card">
               <h3>Current Focus</h3>
-              <p>Systems programming, performance optimization, embedded software, and AI infrastructure development. Exploring AI integration in decision-making and governance systems.</p>
+              <p>Currently pursuing Bachelor's degree in Software and Applications Development at ADA University. Focused on full-stack development, digital logic design, and AI integration.</p>
             </div>
             
             <div class="highlight-card">
               <h3>Technical Skills</h3>
-              <p>Java, Spring Boot, JavaScript, HTML/CSS, MySQL, Python, Digital Logic Design, Circuit Simulation</p>
+              <p>Java, Spring Boot, JavaScript, HTML/CSS, Bootstrap, MySQL, Python, C/C++, Git, Jekyll, Microsoft Office 365</p>
             </div>
             
             <div class="highlight-card">
@@ -106,6 +102,7 @@ permalink: /
           
           <div class="cta-section">
             <a href="{{ '/projects' | relative_url }}" class="cta-button">View My Projects</a>
+            <a href="{{ '/assets/Mahammad_Sheykhov_Finalized_CV.pdf' | relative_url }}" class="cta-button secondary" target="_blank">Download CV</a>
             <a href="mailto:sheykhovm@hotmail.com" class="cta-button secondary">Get In Touch</a>
           </div>
         </div>
